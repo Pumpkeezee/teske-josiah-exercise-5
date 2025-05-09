@@ -1,0 +1,58 @@
+div.content {
+    padding: 25px 70px;
+
+    section.aboutMe{
+        display: flex;
+
+        aside {
+            flex-basis: 70%;
+        }
+        img {
+            width: 500px;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    form {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        .two-columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        input[type=text], input[type=email], input[type=tel], textarea{
+            font-family: inherit;
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        input[type=radio], input[type=checkbox] {
+            background-color: white;
+            border: none;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+
+        input[type=submit] {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            width: 80px;
+            font-size: 12pt;
+            font-family: inherit;
+
+            &:hover {
+                background-color: lightgray;
+            }
+        }
+    }
+}

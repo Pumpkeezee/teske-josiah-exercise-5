@@ -1,0 +1,60 @@
+.clearFloat {
+    clear: both;
+}
+
+div.content {
+    padding: 25px 70px;
+
+    section.aboutMe {
+        /*position: relative;*/
+
+        img {
+            /*z-index: -1;*/
+            float: right;
+            position: relative;
+            top: -50px;
+            right: -25px;
+            width: 60%;
+            aspect-ratio: 1/1;
+            margin-bottom: -50px;
+            margin-left: -40px;
+        }
+    }
+
+    form {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+
+        .two-columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        input[type=text], input[type=email], input[type=tel], textarea {
+            font-family: inherit;
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        input[type=radio], input[type=checkbox] {
+            background-color: white;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        input[type=submit] {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 40px;
+            width: 80px;
+            font-size: 12pt;
+            font-family: inherit;
+        }
+    }
+}

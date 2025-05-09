@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../fonts/GOTHICB.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../fonts/GOTHICBI.TTF);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url(../fonts/GOTHICI.TTF);
+    font-style: italic;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    font-family: "Century Gothic", "Arial", sans-serif;
+
+    /*site and project titles*/
+
+    h1 {
+        font-weight: bold;
+        font-size: 26px;
+        margin: 0;
+    }
+
+    /*section titles*/
+
+    h2 {
+        font-weight: bold;
+        font-size: 30pt;
+    }
+
+    /*section card titles*/
+
+    h3 {
+        font-weight: normal;
+        font-size: 20pt;
+        margin: 0;
+    }
+
+    .noBottomPadding {
+        padding-bottom: 0;
+    }
+
+    .dividerLine {
+        padding-top: 15px;
+        border-top: 4px solid black;
+    }
+
+    .whiteBacked {
+        background-color: white;
+        /*border-radius: 15px;*/
+    }
+
+    .colorBacked {
+        background-color: antiquewhite;
+        /*border-radius: 15px;*/
+    }
+
+    .noBold {
+        font-weight: normal;
+    }
+
+    /*.noGap {*/
+    /*    margin: 0;*/
+    /*}*/
+
+    #siteName {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}

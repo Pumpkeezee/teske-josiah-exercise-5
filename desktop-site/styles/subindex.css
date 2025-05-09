@@ -1,0 +1,42 @@
+div#introduction {
+    margin: 25px 70px;
+
+    > :not(h2) {
+        padding-left: 15px;
+    }
+}
+
+article {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    div {
+        max-width: 25%;
+
+        img {
+            width: 100%;
+            aspect-ratio: auto;
+        }
+    }
+
+    aside.articleText {
+    }
+}
+
+div.instagramAdjacent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    article {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        img {
+            width: 50%;
+            aspect-ratio: initial;
+        }
+    }
+}

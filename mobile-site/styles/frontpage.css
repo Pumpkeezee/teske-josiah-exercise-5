@@ -1,0 +1,12 @@
+#banner {
+    min-height: 150px;
+    text-align: right;
+
+    img#logo {
+        width: 500px;
+    }
+}
+
+img.decal {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,160 @@
+.button {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.highlighted {
+    background-color: antiquewhite;
+    border-width: 10px;
+}
+
+.scribbles {
+    background: url('../assets/doodlesBottomSplash.png') bottom right no-repeat;
+    background-size: 90%;
+}
+
+nav {
+    padding: 10px 50px 10px 25px;
+    /*width: 100%;*/
+    /*display: flex;*/
+    gap: 20px;
+    background-color: antiquewhite;
+    align-items: center;
+
+    img#icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    a.left-side {
+        display: flex;
+        gap: 10px;
+        padding: 0;
+    }
+
+    &.topNav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+
+        #siteName {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+
+            h1 {
+                margin: 0;
+            }
+        }
+    }
+
+    a {
+        padding: 15px 20px;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+
+        &.current, &:hover {
+            background-color: white;
+
+            &.left-side {
+                background-color: transparent;
+            }
+
+            &.button {
+                color: black;
+            }
+        }
+    }
+
+
+    .iconButton {
+        background-color: black;
+        width: 30px;
+        aspect-ratio: 1/1;
+        padding: 4px 4px 1px 5px;
+
+        svg {
+            color: white;
+        }
+
+        &:hover {
+            svg {
+                color: black;
+            }
+        }
+    }
+
+    div#pageMenu {
+        display: flex;
+        gap: 20px;
+    }
+
+    &.bottomInfo {
+        display: flex;
+        justify-content: space-between;
+
+        aside.boringInfo {
+            max-width: 500px;
+
+            p {
+                font-size: 8pt;
+            }
+        }
+
+        aside.bottomButtons {
+            display: flex;
+            justify-content: right;
+            gap: 15px;
+        }
+    }
+}
+
+.deck {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+
+    .cardLnk {
+        text-decoration: none;
+        color: black;
+        width: 30%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0;
+
+        img {
+            width: 100%;
+            border-radius: 2px;
+
+            &.shadowed {
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.14);
+            }
+        }
+
+        h1 {
+            padding: 5px 0 0 5px;
+        }
+
+        h3 {
+            padding: 5px;
+        }
+
+        &.animatedRise {
+            transition: 0.3s;
+            margin: 10px 0 0 0;
+
+            &:hover {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+}

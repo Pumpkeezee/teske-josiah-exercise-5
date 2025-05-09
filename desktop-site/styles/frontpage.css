@@ -1,0 +1,14 @@
+#banner {
+    padding-top: 150px;
+    min-height: 250px;
+    text-align: right;
+    background: url('../assets/doodlesTopSplash.png') center left no-repeat;
+
+    img#logo {
+        width: 500px;
+    }
+}
+
+img.decal {
+    margin-bottom: 50px;
+}

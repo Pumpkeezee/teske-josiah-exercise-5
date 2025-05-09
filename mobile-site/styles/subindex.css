@@ -1,0 +1,25 @@
+div#introduction {
+    margin: 25px 70px;
+
+    > :not(h2) {
+        padding-left: 15px;
+    }
+}
+
+article {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    div {
+
+        img {
+            width: 100%;
+            aspect-ratio: auto;
+        }
+    }
+
+    aside.articleText {
+    }
+}
