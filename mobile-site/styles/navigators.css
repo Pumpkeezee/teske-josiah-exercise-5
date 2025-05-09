@@ -177,11 +177,11 @@ nav {
     .cardLnk {
         text-decoration: none;
         color: black;
-        width: 200px;
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 0;
+        gap: 6%;
 
         img {
             width: 100%;
@@ -193,7 +193,7 @@ nav {
         }
 
         &.widePanel {
-            width: 424px;
+            width: 86%;
         }
 
         h1 {
